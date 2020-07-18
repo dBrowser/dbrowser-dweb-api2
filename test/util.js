@@ -1,8 +1,8 @@
-const ScopedFS = require('scoped-fs')
+const ScopedFS = require('dbrowser-sfs')
 const tmp = require('tmp-promise')
-const dht = require('@hyperswarm/dht')
-const { HyperdriveClient } = require('hyperdrive-daemon-client')
-const HyperdriveDaemon = require('hyperdrive-daemon')
+const dht = require('dwswarm-dht')
+const { HyperdriveClient } = require('dwebfs-daemon-client')
+const HyperdriveDaemon = require('dwebfs-daemon')
 
 const BASE_PORT = 4101
 const BOOTSTRAP_PORT = 3100

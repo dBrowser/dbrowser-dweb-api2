@@ -223,7 +223,7 @@ test.skip('createNetworkActivityStream', async t => {
     { name: 'bar.data', content: Buffer.from([0x00, 0x01]) },
     'bar.txt'
   ])
-  const dst = hyperdrive(tutil.tmpdir(), src.key, {sparse: false})
+  const dst = dwebfs(tutil.tmpdir(), src.key, {sparse: false})
 
   var done = new Promise(resolve => {
     var stream = pda.createNetworkActivityStream(dst)

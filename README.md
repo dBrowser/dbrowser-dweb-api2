@@ -1,18 +1,18 @@
 # pauls-dat-api2
 
-The internal implementation for [Beaker](https://github.com/beakerbrowser/beaker)'s `DatArchive` APIs.
+The internal implementation for [DBrowserX-](https://github.com/dbrowser/dbrowser)'s `DatArchive` APIs.
 Works with Dat 2.0.
 
 All async methods work with callbacks and promises. If no callback is provided, a promise will be returned.
 
-Any time a hyperdrive `archive` is expected, a [scoped-fs](https://github.com/pfrazee/scoped-fs) instance can be provided, unless otherwise stated.
+Any time a dwebfs `archive` is expected, a [dbrowser-sfs](https://github.com/dbrowser/dbrowser-sfs) instance can be provided, unless otherwise stated.
 
 ```js
-var hyperdrive = require('hyperdrive')
-var ScopedFS = require('scoped-fs')
+var dwebfs = require('dwebfs')
+var ScopedFS = require('dbrowser-sfs')
 
-var archive = hyperdrive('./my-hyperdrive')
-var scopedfs = new ScopedFS('./my-scoped-fs')
+var archive = dwebfs('./my-dwebfs')
+var scopedfs = new ScopedFS('./my-dbrowser-sfs')
 
 await pda.readFile(archive, '/hello.txt') // read the published hello.txt
 await pda.readFile(scopedfs, '/hello.txt') // read the local hello.txt
@@ -64,7 +64,7 @@ await pda.readFile(scopedfs, '/hello.txt') // read the local hello.txt
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ```js
-const pda = require('pauls-dat-api')
+const pda = require('dbrowser-dweb-api')
 ```
 
 ## Lookup
@@ -370,7 +370,7 @@ events.on('changed', args => {
 
 ### createNetworkActivityStream(archive)
 
- - `archive` Hyperdrive archive (object). Can not be a scoped-fs object.
+ - `archive` Hyperdrive archive (object). Can not be a dbrowser-sfs object.
  - Returns a Readable stream.
 
 Watches the archive for network events, which it emits as an [emit-stream](https://github.com/substack/emit-stream). Supported events:
