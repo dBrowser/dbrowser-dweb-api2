@@ -1,6 +1,6 @@
 {
   "name": "dbrowser-dweb-api2",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "dWeb API for use within dBrowser.",
   "main": "index.js",
   "scripts": {
@@ -37,10 +37,10 @@
     "dwswarm-dht": "1.0.0",
     "ava": "^0.18.1",
     "concat-stream": "^2.0.0",
-    "dwebfs-daemon": "1.0.1",
-    "dwebfs-daemon-client": "1.1.1",
+    "dwebfs-daemon": "^1.0.1",
+    "dwebfs-daemon-client": "^1.1.1",
     "into-stream": "^5.1.1",
-    "dbrowser-sfs": "1.0.0",
+    "dbrowser-sfs": "^1.0.0",
     "tmp-promise": "^2.0.2"
   }
 }
