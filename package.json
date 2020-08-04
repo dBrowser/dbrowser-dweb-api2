@@ -1,6 +1,6 @@
 {
   "name": "dbrowser-dweb-api2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "dWeb API for use within dBrowser.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dbrowser/pauls-dat-api2.git"
+    "url": "git+https://github.com/dbrowser/dbrowser-dweb-api2.git"
   },
   "keywords": [
     "dat",
@@ -16,17 +16,17 @@
     "p2p",
     "files"
   ],
-  "author": "Paul Frazee <pfrazee@gmail.com>",
+  "author": "jared  <jared@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dbrowser/pauls-dat-api2/issues"
+    "url": "https://github.com/dbrowser/dbrowser-dweb-api2/issues"
   },
-  "homepage": "https://github.com/dbrowser/pauls-dat-api2#readme",
+  "homepage": "https://github.com/dbrowser/dbrowser-dweb-api2#readme",
   "dependencies": {
     "anymatch": "^1.3.2",
-    "dbrowser-error-messages": "^1.0.0",
+    "dbrowser-error-messages": "1.0.0",
     "call-me-maybe": "^1.0.1",
-    "dweb-encoding": "git://github.com/DistributedWeb/dweb-encoding.git#d8b42f5229407715b0f00c9937a2f426d5b0d383",
+    "dweb-encoding": "git://github.com/DistributedWeb/dweb-encoding.git#b7217550eeadffc1a6f52f6decd33024ea4a0359",
     "diff-file-tree": "^2.3.2",
     "emit-stream": "^0.1.2",
     "fs-extra": "^4.0.3",
@@ -34,13 +34,13 @@
     "streamx": "^2.5.0"
   },
   "devDependencies": {
-    "dwswarm-dht": "^1.0.0",
+    "dwswarm-dht": "1.0.0",
     "ava": "^0.18.1",
     "concat-stream": "^2.0.0",
-    "dwebfs-daemon": "^1.0.0",
-    "dwebfs-daemon-client": "1.0.0",
+    "dwebfs-daemon": "1.0.1",
+    "dwebfs-daemon-client": "1.1.1",
     "into-stream": "^5.1.1",
-    "dbrowser-sfs": "^1.0.0",
+    "dbrowser-sfs": "1.0.0",
     "tmp-promise": "^2.0.2"
   }
 }
