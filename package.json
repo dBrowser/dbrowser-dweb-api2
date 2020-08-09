@@ -1,32 +1,32 @@
 {
-  "name": "pauls-dat-api2",
-  "version": "1.0.2",
-  "description": "Beaker's DatArchive implementation for Dat 2.0",
+  "name": "dbrowser-dweb-api2",
+  "version": "1.0.0",
+  "description": "DBrowser's DWebArchive implementation for DWeb 1.0",
   "main": "index.js",
   "scripts": {
     "test": "ava -s test/*.test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/beakerbrowser/pauls-dat-api2.git"
+    "url": "git+https://github.com/dbrowser/dbrowser-dweb-api2.git"
   },
   "keywords": [
-    "dat",
-    "hyperdrive",
+    "dweb",
+    "dwebfs",
     "p2p",
     "files"
   ],
-  "author": "Paul Frazee <pfrazee@gmail.com>",
+  "author": "jared <jared@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/beakerbrowser/pauls-dat-api2/issues"
+    "url": "https://github.com/dbrowser/dbrowser-dweb-api2/issues"
   },
-  "homepage": "https://github.com/beakerbrowser/pauls-dat-api2#readme",
+  "homepage": "https://github.com/dbrowser/dbrowser-dweb-api2#readme",
   "dependencies": {
     "anymatch": "^1.3.2",
-    "beaker-error-constants": "^1.4.0",
+    "dbrowser-error-messages": "git://github.com/dBrowser/dbrowser-error-messages.git#74608012de3ae90bc6a7aa60be04089ce963446f",
     "call-me-maybe": "^1.0.1",
-    "dat-encoding": "^4.0.2",
+    "dweb-encoding": "git://github.com/DistributedWeb/dweb-encoding.git#f93b3f30c61044160cb26b79b13e72f5e36b534a",
     "diff-file-tree": "^2.3.2",
     "emit-stream": "^0.1.2",
     "fs-extra": "^4.0.3",
@@ -34,13 +34,13 @@
     "streamx": "^2.5.0"
   },
   "devDependencies": {
-    "@hyperswarm/dht": "^1.0.1",
+    "dwswarm-dht": "git://github.com/DistributedWeb/dwswarm-dht.git#d641000a1e017d111b923cb396f6ceacf21790d5",
     "ava": "^0.18.1",
     "concat-stream": "^2.0.0",
-    "hyperdrive-daemon": "beta",
-    "hyperdrive-daemon-client": "beta",
+    "dwebfs-daemon": "git://github.com/DistributedWeb/dwebfs-daemon.git#5a13c8a4a40b0fe3d528c15fb3beeadbd4eeaae1",
+    "dwebfs-daemon-client": "git://github.com/DistributedWeb/dwebfs-daemon-client.git#5b261e99dd7ad25a8653d133e2341e75edc85ce9",
     "into-stream": "^5.1.1",
-    "scoped-fs": "^1.4.1",
+    "dbrowser-sfs": "git://github.com/DistributedWeb/dbrowser-sfs.git#c61c4fb5bfe29d1049b8f0aefd6223b816657980",
     "tmp-promise": "^2.0.2"
   }
 }
